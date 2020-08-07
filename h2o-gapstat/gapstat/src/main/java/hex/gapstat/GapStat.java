@@ -94,7 +94,7 @@ public class GapStat extends ClusteringModelBuilder<GapStatModel, GapStatModel.G
 
                     Futures fs = new Futures();
                     DKV.remove(Key.make(km.dest()+"_clusters"), fs);
-                    _parms._wks[k - 1] = Math.log(kMeansModel._output._tot_withinss);
+                    _parms._wks[k - 1] = Math.log(kMeansModel._output._withinss[k-1]);
 
                     double[] bwkbs = new double[_parms._b_max];
                     for (int b = 0; b < _parms._b_max; ++b) {
@@ -132,8 +132,8 @@ public class GapStat extends ClusteringModelBuilder<GapStatModel, GapStatModel.G
 
                         Futures fs2 = new Futures();
                         DKV.remove(Key.make(km2.dest()+"_clusters"), fs2);
-                        double res_bs = kMeansModel2._output._tot_withinss;
-                        bwkbs[b] = Math.log(res_bs);
+                        double res_bs = Math.log(kMeansModel2._output._withinss[k-1]);
+                        bwkbs[b] = res_bs;
                         _parms._b = b+1;
                         gs_model.update();
                     }

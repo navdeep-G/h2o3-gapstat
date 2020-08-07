@@ -38,7 +38,7 @@ public class GapStatTest extends TestUtil {
 
             GapStatModel.GapStatParameters parms = new GapStatModel.GapStatParameters();
             parms._train = fr._key;
-            parms._k_max = 6;
+            parms._k_max = 10;
             parms._b_max = 10;
             parms._seed = 1234;
 
