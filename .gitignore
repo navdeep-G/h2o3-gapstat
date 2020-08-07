@@ -4,7 +4,8 @@
 h2o-gapstat/.idea/
 h2o-gapstat/.gradle/
 h2o-gapstat/build/
-
+h2o-gapstat/gapstat/build
+h2o-gapstat/gapstat/.out
 # Compiled class file
 *.class
 
