@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fe4f7e5d-2d8d-40dc-a34b-ab5b4f5befcb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/gapstat/.gradle/" />
+    <ignored path="$PROJECT_DIR$/gapstat/build/" />
+    <ignored path="$PROJECT_DIR$/gapstat/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="h2o-gapstat" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gapstat/src/test/java/hex/gapstat/GapStatTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#325#326#0" expanded="true" />
+                <element signature="e#359#360#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gapstat/src/main/java/hex/schemas/GapStatModelV3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gapstat/src/main/java/hex/schemas/GapStatV3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gapstat/src/main/java/hex/gapstat/GapStat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="106" column="48" selection-start-line="106" selection-start-column="48" selection-end-line="106" selection-end-column="48" />
+              <folding>
+                <element signature="e#937#938#0" expanded="true" />
+                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#1072#1073#0" expanded="true" />
+                <element signature="e#1114#1115#0" expanded="true" />
+                <element signature="e#1171#1172#0" expanded="true" />
+                <element signature="e#1208#1209#0" expanded="true" />
+                <element signature="e#3495#4777#0" expanded="true" />
+                <element signature="e#4776#4777#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gapstat/src/main/java/water/util/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="308" column="27" lean-forward="true" selection-start-line="308" selection-start-column="27" selection-end-line="308" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#11965#11966#0" expanded="true" />
+                <element signature="e#12005#12006#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gapstat/src/main/java/hex/rng/H2ORandomRNG.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="89">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ai.h2o/h2o-algos/3.30.0.6/1c1dfbbdf079777db99f1765cd2844b393ac1314/h2o-algos-3.30.0.6-sources.jar!/hex/kmeans/KMeans.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gapstat/src/main/java/hex/gapstat/GapStatModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="48" column="77" lean-forward="true" selection-start-line="48" selection-start-column="77" selection-end-line="48" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ai.h2o/h2o-algos/3.30.0.6/1c1dfbbdf079777db99f1765cd2844b393ac1314/h2o-algos-3.30.0.6-sources.jar!/hex/kmeans/KMeansModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>within</find>
+      <find>log</find>
+      <find>gap_stats</find>
+      <find>Math.log</find>
+      <find>_betweenss</find>
+      <find>_wks</find>
+      <find>_parms._wks</find>
+      <find>_parms._wkbs</find>
+      <find>parms._wks</find>
+      <find>_ks</find>
+      <find>gs_model._parms</find>
+      <find>_output._tot</find>
+      <find>withins</find>
+      <find>-2.5199979695992694, -1.9005217325866224, -2.0665952546221713, -1.7467954357577913, -2.0667240324269387</find>
+      <find>.</find>
+      <find>remove</find>
+      <find>remove(</find>
+      <find>tot</find>
+      <find>RNGKIN</find>
+      <find>_tot</find>
+      <find>totw</find>
+      <find>_within</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>_</replace>
+      <replace>_tot_withinss</replace>
+      <replace>_k_max</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/gapstat/src/main/java/hex/gapstat/GapStatModel.java" />
+        <option value="$PROJECT_DIR$/gapstat/src/main/java/hex/gapstat/GapStat.java" />
+        <option value="$PROJECT_DIR$/gapstat/src/test/java/hex/gapstat/GapStatTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="993" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="h2o-gapstat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="h2o-gapstat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="h2o-gapstat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="h2o-gapstat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gapstat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="h2o-gapstat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="h2o-gapstat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gapstat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="h2o-gapstat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="h2o-gapstat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gapstat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="h2o-gapstat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="h2o-gapstat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gapstat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="h2o-gapstat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="h2o-gapstat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gapstat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hex" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="h2o-gapstat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="h2o-gapstat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gapstat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hex" type="462c0819:PsiDirectoryNode" />
+              <item name="gapstat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="h2o-gapstat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="h2o-gapstat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gapstat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="h2o-gapstat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="h2o-gapstat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gapstat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="h2o-gapstat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="h2o-gapstat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gapstat" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gapstat" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.GapStatTest.gapStatIrisWHeader">
+    <configuration name="GapStatTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hex.gapstat.GapStatTest" />
+      <module name="h2o-gapstat.gapstat.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hex.gapstat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GapStatTest.gapStatIris" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="h2o-gapstat.gapstat.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hex.gapstat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hex.gapstat" />
+      <option name="MAIN_CLASS_NAME" value="hex.gapstat.GapStatTest" />
+      <option name="METHOD_NAME" value="gapStatIris" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GapStatTest.gapStatIrisFromR" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="h2o-gapstat.gapstat.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hex.gapstat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hex.gapstat" />
+      <option name="MAIN_CLASS_NAME" value="hex.gapstat.GapStatTest" />
+      <option name="METHOD_NAME" value="gapStatIrisFromR" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GapStatTest.gapStatIrisWHeader" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="h2o-gapstat.gapstat.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hex.gapstat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hex.gapstat" />
+      <option name="MAIN_CLASS_NAME" value="hex.gapstat.GapStatTest" />
+      <option name="METHOD_NAME" value="gapStatIrisWHeader" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GapStatTest.gapStatIrisWHeader" />
+        <item itemvalue="JUnit.GapStatTest.gapStatIrisFromR" />
+        <item itemvalue="JUnit.GapStatTest.gapStatIris" />
+        <item itemvalue="Application.GapStatTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe4f7e5d-2d8d-40dc-a34b-ab5b4f5befcb" name="Default Changelist" comment="" />
+      <created>1596586497584</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596586497584</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="GapStatTest_gapStatIris - 2020.08.06 at 16h 41m 59s.xml">
+      <configuration name="GapStatTest.gapStatIris" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GapStatTest_gapStatIris - 2020.08.06 at 16h 45m 34s.xml">
+      <configuration name="GapStatTest.gapStatIris" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GapStatTest_gapStatIris - 2020.08.06 at 16h 45m 50s.xml">
+      <configuration name="GapStatTest.gapStatIris" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GapStatTest_gapStatIris - 2020.08.06 at 16h 46m 26s.xml">
+      <configuration name="GapStatTest.gapStatIris" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GapStatTest_gapStatIrisWHeader - 2020.08.06 at 17h 24m 50s.xml">
+      <configuration name="GapStatTest.gapStatIrisWHeader" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GapStatTest_gapStatIrisWHeader - 2020.08.06 at 17h 25m 14s.xml">
+      <configuration name="GapStatTest.gapStatIrisWHeader" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GapStatTest_gapStatIrisWHeader - 2020.08.06 at 17h 25m 45s.xml">
+      <configuration name="GapStatTest.gapStatIrisWHeader" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GapStatTest_gapStatIrisFromR - 2020.08.06 at 18h 11m 25s.xml">
+      <configuration name="GapStatTest.gapStatIrisFromR" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GapStatTest_gapStatIrisFromR - 2020.08.06 at 18h 13m 40s.xml">
+      <configuration name="GapStatTest.gapStatIrisFromR" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GapStatTest_gapStatIrisFromR - 2020.08.06 at 18h 13m 54s.xml">
+      <configuration name="GapStatTest.gapStatIrisFromR" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="963" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2991453" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31687716" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39844617" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3295063" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.32963374" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" weight="0.32960597" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gapstat/src/main/java/hex/gapstat/GapStat.java</url>
+          <line>148</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gapstat/src/main/java/hex/gapstat/GapStat.java</url>
+          <line>103</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>getDeterRNG(_parms._seed);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>_parms.wks()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>_parms.wkbs()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>km2</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>gs_model</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>gs_model._parms._b_max</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>gs_model._parms.gaps();</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>gs_model.compute_best_k();</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>_parms._wks.length</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gapstat/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ai.h2o/h2o-core/3.30.0.6/dd5757eec543e740cda872ce2de6d0f8ad8dcb1f/h2o-core-3.30.0.6-sources.jar!/hex/ModelBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2625">
+          <caret line="197" column="11" selection-start-line="197" selection-start-column="11" selection-end-line="197" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ai.h2o/h2o-algos/3.30.0.6/1c1dfbbdf079777db99f1765cd2844b393ac1314/h2o-algos-3.30.0.6-sources.jar!/hex/kmeans/KMeans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ai.h2o/h2o-core/3.30.0.6/dd5757eec543e740cda872ce2de6d0f8ad8dcb1f/h2o-core-3.30.0.6-sources.jar!/water/fvec/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="941" column="20" selection-start-line="941" selection-start-column="13" selection-end-line="941" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gapstat/src/main/java/water/util/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="308" column="27" lean-forward="true" selection-start-line="308" selection-start-column="27" selection-end-line="308" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#11965#11966#0" expanded="true" />
+            <element signature="e#12005#12006#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ai.h2o/h2o-algos/3.30.0.6/1c1dfbbdf079777db99f1765cd2844b393ac1314/h2o-algos-3.30.0.6-sources.jar!/hex/kmeans/KMeansModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gapstat/src/main/java/hex/rng/H2ORandomRNG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gapstat/src/main/java/hex/gapstat/GapStatModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="48" column="77" lean-forward="true" selection-start-line="48" selection-start-column="77" selection-end-line="48" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gapstat/src/main/java/hex/schemas/GapStatModelV3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gapstat/src/main/java/hex/schemas/GapStatV3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gapstat/src/main/java/hex/gapstat/GapStat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="106" column="48" selection-start-line="106" selection-start-column="48" selection-end-line="106" selection-end-column="48" />
+          <folding>
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1072#1073#0" expanded="true" />
+            <element signature="e#1114#1115#0" expanded="true" />
+            <element signature="e#1171#1172#0" expanded="true" />
+            <element signature="e#1208#1209#0" expanded="true" />
+            <element signature="e#3495#4777#0" expanded="true" />
+            <element signature="e#4776#4777#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gapstat/src/test/java/hex/gapstat/GapStatTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+apply plugin: 'net.researchgate.release'
+
+release {
+    tagTemplate = 'v${version}'
+    versionPropertyFile = 'gradle.properties'
+    versionProperties = ['version']
+    failOnUpdateNeeded = false
+    failOnSnapshotDependencies = true 
+    failOnUnversionedFiles = false // FIXME: track why ws contains unversioned files.
+
+    git {
+        requireBranch = 'master'
+        commitVersionFileOnly = true
+    }
+}

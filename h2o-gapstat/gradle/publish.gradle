@@ -1,0 +1,125 @@
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+apply plugin: "signing"
+
+ext {
+    isSnapshot = version.endsWith("-SNAPSHOT")
+}
+
+// Default task to bundle sources code as jar
+task sourcesJar(type: Jar) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+// Container for generated POMs (by default added into archive configuration)
+configurations {
+    pom {
+        transitive = false
+    }
+}
+
+configurations {
+    toPublish
+}
+
+artifacts {
+    toPublish sourcesJar
+}
+
+//
+// Record all generated POM files for given publishing task
+//
+project.tasks.whenTaskAdded({ t ->
+    // This is adhoc specific task for defined publication
+    if (t.name.contains('generatePomFileForMavenAll')) {
+        t.doLast({ tt ->
+            artifacts {
+                pom file(t.destination)
+            }
+        })
+    }
+})
+
+// This is part of publish module responsible by putting jars into local Ivy cache
+// The code is here to support Spark assembly which expects modules in local Ivy cache
+publishing {
+    publications {
+
+        mavenAll(MavenPublication) {
+            artifactId project.name
+
+            // Publish all artifacts
+            // NOTE: needs to be here to create a POM file with correct dependencies
+            from components.java
+
+            // Publish additional artifacts as documentaiton or source code
+            configurations.toPublish.allArtifacts.each { art ->
+                logger.debug("Publishing artifact for: " + art)
+                artifact art
+            }
+
+            pom.withXml { provider ->
+                def h2oPOM = {
+                    // See https://discuss.gradle.org/t/some-elements-are-removed-when-generate-a-pom-xml-using-the-maven-publish-plugin/2073/4
+                    resolveStrategy = Closure.DELEGATE_FIRST
+                    name project.name
+                    description project.description
+                    url 'https://github.com/h2oai/mli'
+                    inceptionYear '2017'
+
+                    organization {
+                        name 'H2O.ai'
+                        url  'http://h2o.ai/'
+                    }
+
+                    // H2O licensing
+                    licenses {
+                        license {
+                            name 'TODO'
+                            url  'TODO'
+                            distribution 'repo'
+                        }
+                    }
+
+                    // Info for contributors
+                    scm {
+                        url        'https://github.com/h2oai/mli'
+                        connection 'scm:git:https://github.com/h2oai/mli.git'
+                        developerConnection 'scm:git:git@github.com:h2oai/mli.git'
+                    }
+
+                    // Public H2O JIRA for issue management
+                    issueManagement {
+                        system 'Jira'
+                        url    'http://jira.h2o.ai'
+                    }
+                }
+                // Append basic POM information
+                provider.asNode().children().last() + h2oPOM
+            }
+        }
+    }
+
+    repositories {
+        maven {
+            name "LocalRepo"
+            url "$rootDir/build/repo"
+        }
+
+        maven {
+            name "LocalNexusRepo"
+            if (isSnapshot) {
+                url "${localNexusLocation}/snapshots"
+            } else {
+                url "${localNexusLocation}/releases"
+            }
+
+            credentials {
+                username project.findProperty("local-release-maven.username") ?: "<NA>"
+                password project.findProperty("local-release-maven.password") ?: "<NA>"
+            }
+        }
+    }
+}
+

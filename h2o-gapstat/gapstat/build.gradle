@@ -1,0 +1,45 @@
+//
+// Gap Stat
+//
+description = "GapStat"
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+    // H2O core dependency
+    compile "ai.h2o:h2o-core:${h2oProjectVersion}"
+    compile "ai.h2o:h2o-ext-xgboost:${h2oProjectVersion}"
+    // H2O genmodel dependency
+    compile "ai.h2o:h2o-genmodel-ext-xgboost:${h2oProjectVersion}"
+    compile "ai.h2o:h2o-genmodel:${h2oProjectVersion}"
+    // H2O algos dependency
+    compile "ai.h2o:h2o-algos:${h2oProjectVersion}"
+    // H2O web dependency
+    compile "ai.h2o:h2o-web:${h2oProjectVersion}"
+    // H2O jetty dependency
+    compile "ai.h2o:h2o-jetty-8:${h2oProjectVersion}"
+    // H2O entry points
+    compile "ai.h2o:h2o-app:${h2oProjectVersion}"
+    // H2O Automl
+    compile "ai.h2o:h2o-automl:${h2oProjectVersion}"
+
+    // H2O test dependencies
+    testCompile "ai.h2o:h2o-core:${h2oProjectVersion}:test"
+    // jUnit dependency
+    testCompile 'junit:junit:4.12'
+}
+
+// The default 'test' behavior is broken in that it does not grok clusters.
+// For H2O, all tests need to be run on a cluster, where each JVM is
+// "free-running" - it's stdout/stderr are NOT hooked by another process.  If
+// they are hooked (e.g., by the gradle driver process) then the stdout/err get
+// buffered and when all CPUs are maxed out (happens over a large fraction of
+// the test run) no output is visible.  If the JVMs then crash (again, common
+// enough), we get NO output for the test run.  So instead we need to arrange a
+// complete cluster of free-running JVMs and redirect all output (at the OS
+// level) to files - then scrape the files later for test results.
+test {
+    dependsOn cpLibs, jar, testJar, testSingleNode, testMultiNode
+
+    // Defeat task 'test' by running no tests.
+    exclude '**'
+}
