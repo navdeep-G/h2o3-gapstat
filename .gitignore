@@ -1,4 +1,9 @@
+# Extra files from dev setup
 .DS_Store
+.idea/
+h2o-gapstat/.idea/
+h2o-gapstat/.gradle/
+h2o-gapstat/build/
 
 # Compiled class file
 *.class
