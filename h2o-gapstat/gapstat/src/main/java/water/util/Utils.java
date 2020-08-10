@@ -7,11 +7,6 @@ import hex.rng.MersenneTwisterRNG;
 import hex.rng.XorShiftRNG;
 import sun.misc.Unsafe;
 import water.*;
-//import water.api.DocGen;
-//import water.api.DocGen.FieldDoc;
-import water.fvec.Chunk;
-//import water.fvec.ParseDataset2.Compression;
-import water.fvec.Vec;
 import water.nbhm.UtilUnsafe;
 
 import java.io.*;
@@ -21,10 +16,6 @@ import java.text.DecimalFormat;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.zip.GZIPInputStream;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipFile;
-import java.util.zip.ZipInputStream;
 
 import static java.lang.Double.isNaN;
 

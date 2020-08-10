@@ -9,8 +9,8 @@ public class RegisterRestApi extends AlgoAbstractRegister {
 
     @Override
     public void registerEndPoints(RestApiContext context) {
-        GapStat pam = new GapStat(true);
-        registerModelBuilder(context, pam, SchemaServer.getStableVersion());
+        GapStat gapStat = new GapStat(true);
+        registerModelBuilder(context, gapStat, SchemaServer.getStableVersion());
     }
 
     @Override
