@@ -4,3 +4,4 @@
 
 ### Reference:
 * https://statweb.stanford.edu/~gwalther/gap
+* https://stat.ethz.ch/R-manual/R-devel/library/cluster/html/clusGap.html
