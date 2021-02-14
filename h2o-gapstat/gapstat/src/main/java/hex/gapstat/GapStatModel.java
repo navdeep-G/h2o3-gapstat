@@ -51,7 +51,6 @@ public class GapStatModel extends ClusteringModel<GapStatModel, GapStatModel.Gap
 
 
         public double[] wks() { return _wks; }
-        public double[] wkbs() { return _wkbs; }
         public double[] sk() {return _sk; }
         public double[] gaps() {return _gap_stats; }
 

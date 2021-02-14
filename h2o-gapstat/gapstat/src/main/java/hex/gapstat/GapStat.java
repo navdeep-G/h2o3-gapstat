@@ -13,7 +13,6 @@ import water.Job;
 import water.fvec.*;
 
 import java.util.Random;
-import static water.util.Utils.getDeterRNG;
 
 public class GapStat extends ClusteringModelBuilder<GapStatModel, GapStatModel.GapStatParameters, GapStatModel.GapStatOutput> {
     @Override
@@ -101,7 +100,7 @@ public class GapStat extends ClusteringModelBuilder<GapStatModel, GapStatModel.G
                         Frame bs = new MRTask() {
                             @Override
                             public void map(Chunk[] chks, NewChunk[] nchks) {
-                                final Random rng = getDeterRNG(_parms._seed + chks[0].cidx());
+                                final Random rng = new Random();
 
                                 for (int row = 0; row < Math.floor(_parms._bootstrap_fraction * chks[0]._len); ++row) {
                                     for (int col = 0; col < chks.length; ++ col) {

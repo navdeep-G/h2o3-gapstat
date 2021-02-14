@@ -42,6 +42,7 @@ public class GapStatV3 extends ModelBuilderSchema<GapStat, GapStatV3, GapStatV3.
         // Outputs
         @API(help = "Optimal number of clusters")
         int best_k = 1;
+
         @API(help = "The gap statistics per value of k: (1 <= k <= k_max")
         double[] gap_stats;
 
