@@ -48,12 +48,6 @@ public class GapStatModel extends ClusteringModel<GapStatModel, GapStatModel.Gap
         public int _max_iter = 50;
         // Fraction of data size to replicate in each Monte Carlo simulation.
         public double _bootstrap_fraction = 1.0;
-
-
-        public double[] wks() { return _wks; }
-        public double[] sk() {return _sk; }
-        public double[] gaps() {return _gap_stats; }
-
     }
 
     public static class GapStatOutput extends ClusteringModel.ClusteringOutput {
@@ -65,10 +59,6 @@ public class GapStatModel extends ClusteringModel<GapStatModel, GapStatModel.Gap
             super(b);
         }
 
-        @Override
-        public ModelCategory getModelCategory() {
-            return ModelCategory.Clustering;
-        }
     }
 
     public GapStatModel(Key selfKey, GapStatParameters parms, GapStatOutput output) {
@@ -87,9 +77,9 @@ public class GapStatModel extends ClusteringModel<GapStatModel, GapStatModel.Gap
     }
 
     public int compute_best_k() {
-        double[] gaps = _parms.gaps();
-        double[] log_wks = _parms.wks();
-        double[] sks = _parms.sk();
+        double[] gaps = _parms._gap_stats;
+        double[] log_wks = _parms._wks;
+        double[] sks = _parms._sk;
         int kmin = -1;
         for (int i = 0; i < gaps.length - 1; ++i) {
             int cur_k = i + 1;
@@ -116,7 +106,7 @@ public class GapStatModel extends ClusteringModel<GapStatModel, GapStatModel.Gap
             if (kmin > 1) _parms._best_k = kmin;
         }
 
-        if (_parms._best_k <= 0) _parms._best_k = (int)Double.NaN;
+        if (_parms._best_k < 0) _parms._best_k = (int)Double.NaN;
         if (_parms._best_k == 0) _parms._best_k = 1;
 
         return kmin;

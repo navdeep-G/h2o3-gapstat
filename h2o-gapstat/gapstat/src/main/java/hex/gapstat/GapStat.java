@@ -149,7 +149,7 @@ public class GapStat extends ClusteringModelBuilder<GapStatModel, GapStatModel.G
                     gs_model.update();
                 }
                 gs_model._output._best_k = gs_model.compute_best_k();
-                gs_model._output._gap_stats = gs_model._parms.gaps();
+                gs_model._output._gap_stats = gs_model._parms._gap_stats;
             } finally {
                 if (gs_model != null) gs_model.unlock(_job);
                 if (km != null) DKV.remove(km._job._key);
