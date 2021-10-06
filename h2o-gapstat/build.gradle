@@ -59,12 +59,12 @@ ext {
 
     // Configure h2o dependency information
     useSnapshotH2o = false
-    h2oProjectBranchNumber = "3.30.0"
+    h2oProjectBranchNumber = "3.34.0"
     if (useSnapshotH2o) {
-        h2oProjectBuildNumber = "6"
+        h2oProjectBuildNumber = "1"
     }
     else {
-        h2oProjectBuildNumber = "6"
+        h2oProjectBuildNumber = "1"
     }
     h2oProjectVersion = "${h2oProjectBranchNumber}.${h2oProjectBuildNumber}"
 }
@@ -73,7 +73,7 @@ ext {
 // For all projects (this and all subprojects) specify common properties and tasks
 //
 allprojects {
-    group = 'ai.h2o.gapstat'
+    group = 'ai.h2o.gapstatistic'
 
     // Support different IDEs
     apply plugin: 'idea'
@@ -104,7 +104,7 @@ subprojects {
             url "http://repository.mapr.com/maven/"
         }
         maven {
-            url "http://h2o-release.s3.amazonaws.com/h2o/master/${h2oProjectBuildNumber}/maven/repo/"
+            url "http://h2o-release.s3.amazonaws.com/h2o/rel-zizler/${h2oProjectBuildNumber}/maven/repo/"
         }
 
         // Enable 'maven local' for resolving your locally cached dependencies
@@ -131,7 +131,7 @@ ext {
     // Collect all artifacts produced by all projects in this project - all "archives" artifacts
     allArchives = subprojects.findAll().inject(
             files(), { acc, pj ->
-            acc
+        acc
     })
     // Collect all test artifacts
     allTestArchives = files() // filed lazily below

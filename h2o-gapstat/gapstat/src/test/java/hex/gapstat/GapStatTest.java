@@ -6,6 +6,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import water.TestUtil;
 import water.fvec.Frame;
+import water.DKV;
 
 import java.util.Arrays;
 
@@ -38,8 +39,10 @@ public class GapStatTest extends TestUtil {
                 filePath = "smalldata/iris/iris_wheader.csv";
                 target = "class";
             }
+
             fr = parse_test_file(filePath);
             fr.remove(target).remove();
+            DKV.put(fr);
 
             GapStatModel.GapStatParameters parms = new GapStatModel.GapStatParameters();
             parms._train = fr._key;
