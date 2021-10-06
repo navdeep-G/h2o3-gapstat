@@ -3,7 +3,7 @@ plugins {
 }
 
 //
-// PAM
+// Gap Stat
 //
 description = "GapStat"
 

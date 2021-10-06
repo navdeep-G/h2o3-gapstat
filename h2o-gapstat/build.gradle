@@ -73,7 +73,7 @@ ext {
 // For all projects (this and all subprojects) specify common properties and tasks
 //
 allprojects {
-    group = 'ai.h2o.gapstatistic'
+    group = 'ai.h2o.gapstat'
 
     // Support different IDEs
     apply plugin: 'idea'
