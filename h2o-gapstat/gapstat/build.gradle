@@ -1,3 +1,7 @@
+plugins {
+    id "de.undercouch.download" version "4.0.4"
+}
+
 //
 // Gap Stat
 //
@@ -16,16 +20,20 @@ dependencies {
     // H2O web dependency
     compile "ai.h2o:h2o-web:${h2oProjectVersion}"
     // H2O jetty dependency
-    compile "ai.h2o:h2o-jetty-8:${h2oProjectVersion}"
+    compile "ai.h2o:h2o-jetty-9:${h2oProjectVersion}"
     // H2O entry points
     compile "ai.h2o:h2o-app:${h2oProjectVersion}"
     // H2O Automl
     compile "ai.h2o:h2o-automl:${h2oProjectVersion}"
 
-    // H2O test dependencies
-    testCompile "ai.h2o:h2o-core:${h2oProjectVersion}:test"
-    // jUnit dependency
-    testCompile 'junit:junit:4.12'
+    // Test dependencies only
+    testCompile "junit:junit:4.12"
+    testCompile files("$rootDir/lib/h2o-test-support-${h2oProjectVersion}.jar")
+}
+
+task downloadTestLibs(type: Download) {
+    src "http://h2o-release.s3.amazonaws.com/h2o/rel-zizler/1/maven/repo/ai/h2o/h2o-test-support/${h2oProjectVersion}/h2o-test-support-${h2oProjectVersion}.jar"
+    dest "$rootDir/lib"
 }
 
 // The default 'test' behavior is broken in that it does not grok clusters.
@@ -38,7 +46,7 @@ dependencies {
 // complete cluster of free-running JVMs and redirect all output (at the OS
 // level) to files - then scrape the files later for test results.
 test {
-    dependsOn cpLibs, jar, testJar, testSingleNode, testMultiNode
+    dependsOn downloadTestLibs, cpLibs, jar, testJar, testSingleNode //, testMultiNode // Uncomment for multinode testing
 
     // Defeat task 'test' by running no tests.
     exclude '**'
