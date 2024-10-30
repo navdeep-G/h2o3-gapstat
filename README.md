@@ -48,3 +48,7 @@ This implementation builds upon the principles outlined in the original paper by
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request if you have suggestions or improvements for this implementation.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
