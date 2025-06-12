@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository provides an implementation of the Gap Statistic, a clustering evaluation method, integrated into [H2O-3](https://github.com/h2oai/h2o-3), H2O.ai's open-source machine learning platform. The Gap Statistic helps determine the optimal number of clusters in a dataset by comparing the within-cluster dispersion to that of a reference null distribution, effectively evaluating whether a proposed clustering structure is significantly better than random noise.
+This repository provides an implementation of the [Gap Statistic](https://hastie.su.domains/Papers/gap.pdf), a clustering evaluation method, integrated into [H2O-3](https://github.com/h2oai/h2o-3), H2O.ai's open-source machine learning platform. The Gap Statistic helps determine the optimal number of clusters in a dataset by comparing the within-cluster dispersion to that of a reference null distribution, effectively evaluating whether a proposed clustering structure is significantly better than random noise.
 
 ## Gap Statistic Methodology
 
@@ -42,8 +42,7 @@ This implementation builds upon the principles outlined in the original paper by
 ### References
 
 - Tibshirani, R., Walther, G., & Hastie, T. (2001). "Estimating the number of clusters in a data set via the Gap statistic." *Journal of the Royal Statistical Society: Series B (Statistical Methodology)*.
-  - [Stanford Gap Statistic Methodology](https://statweb.stanford.edu/~gwalther/gap)
-  - [R Documentation for Gap Statistic](https://stat.ethz.ch/R-manual/R-devel/library/cluster/html/clusGap.html)
+- [R Documentation for Gap Statistic](https://stat.ethz.ch/R-manual/R-devel/library/cluster/html/clusGap.html)
 
 ## Contributing
 
